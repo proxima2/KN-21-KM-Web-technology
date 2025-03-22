@@ -42,3 +42,15 @@ ul {
 main{
   margin-left: 10px;
 }
+
+.special-p{
+  color: #666;
+  text-align: center;
+  padding: 6px;
+}
+
+.special-link{
+  text-decoration: none;
+  color: #ff0000;
+  margin-left: 920px;
+}
