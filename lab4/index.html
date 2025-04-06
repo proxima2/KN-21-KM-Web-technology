@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторна 4</title>
+</head>
+
+<body>
+  <h1>Лабораторна 4: Вступ до JavaScript</h1>
+  <script>
+    var name = prompt("Введіть ім'я");
+    alert("Привіт, " + name + "!");
+
+    var a = prompt("Перше число");
+    var b = prompt("Друге число");
+    var v = prompt("Номер варіанту");
+
+    a = parseFloat(a);
+    b = parseFloat(b);
+    v = parseInt(v);
+
+    if (v % 2 === 0) {
+      alert("Сума: " + (a + b) + ", Різниця: " + (a - b));
+    } else {
+      if (b != 0) {
+        alert("Добуток: " + (a * b) + ", Частка: " + (a / b));
+      } else {
+        alert("Ділення на нуль неможливе");
+      }
+    }
+
+    const myAge = 18; 
+    const currentYear = 2025;
+
+    const birthYear = prompt("Введіть свій рік народження:");
+    const userAge = currentYear - parseInt(birthYear);
+
+    const ageDifference = Math.abs(userAge - myAge);
+
+    if (userAge > myAge) {
+      alert("Ваш вік: " + userAge + ". Ви старший на " + ageDifference + " років.");
+    } else if (userAge < myAge) {
+      alert("Ваш вік: " + userAge + ". Ви молодший на " + ageDifference + " років.");
+    } else {
+      alert("Ваш вік: " + userAge + ". Ми одного віку!");
+    }
+
+  </script>
+</body>
+
+</html>

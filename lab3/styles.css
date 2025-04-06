@@ -43,6 +43,7 @@ footer {
   padding: 40px;
   max-width: 1200px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .box {
